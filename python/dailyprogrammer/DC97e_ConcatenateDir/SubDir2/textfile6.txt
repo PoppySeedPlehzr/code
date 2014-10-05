@@ -1,0 +1,166 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1  24452  2388 ?        Ss   13:05   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    13:05   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    13:05   0:01 [ksoftirqd/0]
+root         6  0.0  0.0      0     0 ?        S    13:05   0:00 [migration/0]
+root         7  0.0  0.0      0     0 ?        S    13:05   0:00 [watchdog/0]
+root         8  0.0  0.0      0     0 ?        S    13:05   0:00 [migration/1]
+root        10  0.1  0.0      0     0 ?        S    13:05   0:07 [ksoftirqd/1]
+root        12  0.0  0.0      0     0 ?        S    13:05   0:00 [watchdog/1]
+root        13  0.0  0.0      0     0 ?        S<   13:05   0:00 [cpuset]
+root        14  0.0  0.0      0     0 ?        S<   13:05   0:00 [khelper]
+root        15  0.0  0.0      0     0 ?        S    13:05   0:00 [kdevtmpfs]
+root        16  0.0  0.0      0     0 ?        S<   13:05   0:00 [netns]
+root        18  0.0  0.0      0     0 ?        S    13:05   0:00 [sync_supers]
+root        19  0.0  0.0      0     0 ?        S    13:05   0:00 [bdi-default]
+root        20  0.0  0.0      0     0 ?        S<   13:05   0:00 [kintegrityd]
+root        21  0.0  0.0      0     0 ?        S<   13:05   0:00 [kblockd]
+root        22  0.0  0.0      0     0 ?        S<   13:05   0:00 [ata_sff]
+root        23  0.0  0.0      0     0 ?        S    13:05   0:00 [khubd]
+root        24  0.0  0.0      0     0 ?        S<   13:05   0:00 [md]
+root        26  0.0  0.0      0     0 ?        S    13:05   0:00 [khungtaskd]
+root        27  0.0  0.0      0     0 ?        S    13:05   0:00 [kswapd0]
+root        28  0.0  0.0      0     0 ?        SN   13:05   0:00 [ksmd]
+root        29  0.0  0.0      0     0 ?        SN   13:05   0:00 [khugepaged]
+root        30  0.0  0.0      0     0 ?        S    13:05   0:00 [fsnotify_mark]
+root        31  0.0  0.0      0     0 ?        S    13:05   0:00 [ecryptfs-kthrea]
+root        32  0.0  0.0      0     0 ?        S<   13:05   0:00 [crypto]
+root        40  0.0  0.0      0     0 ?        S<   13:05   0:00 [kthrotld]
+root        42  0.0  0.0      0     0 ?        S    13:05   0:00 [scsi_eh_0]
+root        43  0.0  0.0      0     0 ?        S    13:05   0:00 [scsi_eh_1]
+root        44  0.0  0.0      0     0 ?        S    13:05   0:00 [scsi_eh_2]
+root        45  0.0  0.0      0     0 ?        S    13:05   0:00 [scsi_eh_3]
+root        67  0.0  0.0      0     0 ?        S<   13:05   0:00 [devfreq_wq]
+root        68  0.1  0.0      0     0 ?        S    13:05   0:07 [kworker/1:2]
+root       153  0.0  0.0      0     0 ?        S    13:05   0:00 [scsi_eh_4]
+root       157  0.0  0.0      0     0 ?        S    13:05   0:00 [usb-storage]
+root       219  0.0  0.0      0     0 ?        S    13:05   0:01 [jbd2/sda1-8]
+root       220  0.0  0.0      0     0 ?        S<   13:05   0:00 [ext4-dio-unwrit]
+root       308  0.0  0.0  17224   636 ?        S    13:05   0:00 upstart-udev-bridge --daemon
+root       321  0.0  0.0  21840  1684 ?        Ss   13:05   0:00 /sbin/udevd --daemon
+102        530  0.1  0.0  24844  1984 ?        Ss   13:05   0:05 dbus-daemon --system --fork --activation=upstart
+root       548  0.0  0.1  21308  2104 ?        Ss   13:05   0:00 /usr/sbin/bluetoothd
+syslog     549  0.0  0.0 249464  1572 ?        Sl   13:05   0:01 rsyslogd -c5
+avahi      552  0.0  0.0  32292  1716 ?        S    13:05   0:00 avahi-daemon: running [companion-cube.local]
+avahi      553  0.0  0.0  32172   468 ?        S    13:05   0:00 avahi-daemon: chroot helper
+root       578  0.0  0.0      0     0 ?        S<   13:05   0:00 [krfcommd]
+root       594  0.0  0.1 104088  4020 ?        Ss   13:05   0:00 /usr/sbin/cupsd -F
+root       626  0.0  0.0      0     0 ?        S<   13:05   0:00 [hci0]
+root       631  0.0  0.0      0     0 ?        S<   13:05   0:00 [kpsmoused]
+root       757  0.0  0.0      0     0 ?        S<   13:05   0:00 [hd-audio0]
+root       770  0.0  0.1  79036  3220 ?        Ss   13:05   0:00 /usr/sbin/modem-manager
+root       777  0.0  0.0  15180   412 ?        S    13:05   0:00 upstart-socket-bridge --daemon
+root       780  0.0  0.3 256912  7468 ?        Ssl  13:05   0:02 NetworkManager
+root       796  0.0  0.2 212352  4928 ?        Sl   13:05   0:03 /usr/lib/policykit-1/polkitd --no-debug
+root       820  0.0  0.1  31692  2912 ?        Ss   13:05   0:00 /sbin/wpa_supplicant -B -P /run/sendsigs.omit.d/wpasupplicant.pid -u -s -O /var/run/wpa_supplicant
+root       824  0.0  0.0      0     0 ?        S<   13:05   0:00 [led_workqueue]
+root       934  0.0  0.0      0     0 ?        S    13:05   0:00 [flush-8:0]
+root       942  0.0  0.0   7256  1568 ?        S    13:05   0:00 /sbin/dhclient -d -4 -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /var/run/sendsigs.omit.d/network-manager.dhclient-eth1.pid -lf /var/lib/dhcp/dhclient-07387ae9-8b0b-423c-8c70-bbf679ed09eb-eth1.lease -cf /var/run/nm-dhclient-eth1.conf eth1
+root      1227  0.0  0.0  20000   980 tty4     Ss+  13:05   0:00 /sbin/getty -8 38400 tty4
+root      1232  0.0  0.0  20000   976 tty5     Ss+  13:05   0:00 /sbin/getty -8 38400 tty5
+root      1247  0.0  0.0  20000   976 tty2     Ss+  13:05   0:00 /sbin/getty -8 38400 tty2
+root      1250  0.0  0.0  20000   976 tty3     Ss+  13:05   0:00 /sbin/getty -8 38400 tty3
+root      1260  0.0  0.0   4452   816 ?        Ss   13:05   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root      1264  0.0  0.0  19104  1024 ?        Ss   13:05   0:00 cron
+daemon    1265  0.0  0.0  16900   376 ?        Ss   13:05   0:00 atd
+root      1266  0.0  0.2 287568  4392 ?        Ssl  13:05   0:00 lightdm
+root      1273  0.0  0.0  15972   688 ?        Ss   13:05   0:02 /usr/sbin/irqbalance
+postgres  1297  0.0  0.4 131912 10192 ?        S    13:05   0:02 /usr/lib/postgresql/9.1/bin/postgres -D /var/lib/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+root      1304  0.0  0.2 136136  4540 ?        Sl   13:05   0:00 /usr/lib/accountsservice/accounts-daemon
+root      1320  0.0  0.2 1045184 4136 ?        Sl   13:05   0:01 /usr/sbin/console-kit-daemon --no-daemon
+root      1413  0.0  0.2 220160  4712 ?        Sl   13:05   0:01 /usr/lib/upower/upowerd
+nobody    1478  0.0  0.0  33036  1300 ?        S    13:05   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.0.1 --conf-file=/var/run/nm-dns-dnsmasq.conf --cache-size=0 --proxy-dnssec
+postgres  1633  0.0  0.0 131896  1816 ?        Ss   13:05   0:01 postgres: writer process                                                                                                    
+postgres  1634  0.0  0.0 131896  1576 ?        Ss   13:05   0:01 postgres: wal writer process                                                                                                
+postgres  1635  0.0  0.1 132636  2928 ?        Ss   13:05   0:00 postgres: autovacuum launcher process                                                                                       
+postgres  1636  0.0  0.0 100272  1644 ?        Ss   13:05   0:00 postgres: stats collector process                                                                                           
+postgres  1687  0.0  0.3  68864  7704 ?        S    13:05   0:00 /opt/metasploit-4.4.0/postgresql/bin/postgres.bin -D /opt/metasploit-4.4.0/postgresql/data -p 7337
+postgres  1712  0.0  0.0  68864  1544 ?        Ss   13:05   0:01 postgres: writer process                                                                          
+postgres  1713  0.0  0.0  68864  1288 ?        Ss   13:05   0:01 postgres: wal writer process                                                                      
+postgres  1714  0.0  0.1  69836  2624 ?        Ss   13:05   0:00 postgres: autovacuum launcher process                                                             
+postgres  1715  0.0  0.0  37396  1340 ?        Ss   13:05   0:01 postgres: stats collector process                                                                 
+root      1829  0.0  0.1 193412  3924 ?        Sl   13:05   0:01 /usr/lib/udisks/udisks-daemon
+root      1833  0.0  0.0  45512   800 ?        S    13:05   0:00 udisks-daemon: not polling any devices
+rtkit     1877  0.0  0.0 168864  1344 ?        SNl  13:05   0:00 /usr/lib/rtkit/rtkit-daemon
+root      2003 12.1 10.5 1247116 215976 ?      Sl   13:05   9:32 prosvc                                                                        
+daemon    2142  1.0  4.6 284692 94452 ?        Sl   13:06   0:50 thin server (127.0.0.1:3001)                                                                                                                            
+root      2204  0.0  0.0  20000   976 tty1     Ss+  13:06   0:00 /sbin/getty -8 38400 tty1
+root      2320  0.0  0.0  21752   884 ?        Ss   13:07   0:00 nginx: master process /opt/metasploit-4.4.0/apps/pro/engine/arch-lib/linux64/nginx/bin/nginx -c /opt/metasploit-4.4.0/apps/pro/nginx/conf/nginx.conf
+daemon    2321  0.0  0.0  22160  1364 ?        S    13:07   0:00 nginx: worker process                                                                                                         
+daemon    2322  0.0  0.0  22160  1628 ?        S    13:07   0:00 nginx: worker process                                                                                                         
+daemon    2323  0.0  0.0  22160  1628 ?        S    13:07   0:00 nginx: worker process                                                                                                         
+daemon    2324  0.0  0.0  22160  1624 ?        S    13:07   0:00 nginx: worker process                                                                                                         
+root      2401  0.0  0.0  21836  1220 ?        S    13:08   0:00 /sbin/udevd --daemon
+root      2402  0.0  0.0  21836  1288 ?        S    13:08   0:00 /sbin/udevd --daemon
+postgres  2471  0.0  0.4  70940  8724 ?        Ss   13:09   0:00 postgres: msf3 msf3 127.0.0.1(52754) idle                                                         
+postgres  2472  0.2  0.4  70928  8604 ?        Ss   13:09   0:12 postgres: msf3 msf3 127.0.0.1(52755) idle                                                         
+postgres  2536  0.0  0.3  70876  7760 ?        Ss   13:09   0:00 postgres: msf3 msf3 127.0.0.1(52756) idle                                                         
+postgres  2541  0.0  0.3  70820  6264 ?        Ss   13:09   0:00 postgres: msf3 msf3 127.0.0.1(52757) idle                                                         
+postgres  2873  0.0  0.3  70928  7068 ?        Ss   13:14   0:00 postgres: msf3 msf3 127.0.0.1(52782) idle                                                         
+nicholas  3117  0.0  0.2 310700  5076 ?        Sl   13:17   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+nicholas  3793  0.0  0.1  62260  3560 ?        S    13:22   0:00 /usr/lib/libmenu-cache1/libexec/menu-cached
+root      3973  0.1  0.0      0     0 ?        S    13:22   0:04 [kworker/0:1]
+root      4003  0.0  0.0  20000   976 tty6     Ss+  13:22   0:00 /sbin/getty -8 38400 tty6
+nicholas  4290  0.0  0.2 310732  5108 ?        Sl   13:26   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+nicholas  4810  0.2  0.2 356636  5956 ?        S<l  13:29   0:09 /usr/bin/pulseaudio --start --log-target=syslog
+root      5114  3.7  0.8 117188 18240 tty7     Ss+  13:32   1:57 /usr/bin/X :0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      5163  0.0  0.0      0     0 ?        Z    13:32   0:00 [lightdm] <defunct>
+root      5164  0.0  0.0      0     0 ?        Z    13:32   0:00 [lightdm] <defunct>
+root      5165  0.0  0.2 171488  4284 ?        Sl   13:32   0:00 lightdm --session-child 12 41
+nicholas  5195  0.0  0.2 194516  5132 ?        Ssl  13:32   0:00 /usr/bin/lxsession -s LXDE -e LXDE
+nicholas  5227  0.0  0.0  12484   320 ?        Ss   13:32   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/startlxde
+nicholas  5230  0.0  0.0  26548   536 ?        S    13:32   0:00 /usr/bin/dbus-launch --exit-with-session /usr/bin/startlxde
+nicholas  5231  0.0  0.0  25000  1568 ?        Ss   13:32   0:00 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+nicholas  5238  0.2  0.4 113896  9620 ?        S    13:32   0:06 openbox --config-file /home/nicholas/.config/openbox/lxde-rc.xml
+nicholas  5241  0.0  0.1  63832  2668 ?        S    13:32   0:01 xscreensaver -no-splash
+nicholas  5242  0.6  0.9 186608 19168 ?        S    13:32   0:21 lxpanel --profile LXDE
+nicholas  5243  0.1  0.8 348348 17544 ?        Sl   13:32   0:05 pcmanfm --desktop --profile LXDE
+nicholas  5245  0.0  0.2 190432  5676 ?        Sl   13:32   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+nicholas  5249  0.0  0.6 432772 14152 ?        Sl   13:32   0:00 update-notifier
+nicholas  5251  0.0  0.3 426992  6292 ?        Sl   13:32   0:00 zeitgeist-datahub
+nicholas  5256  0.0  0.7 488700 14952 ?        Sl   13:32   0:00 nm-applet
+nicholas  5268  0.0  0.2 295148  5492 ?        Sl   13:32   0:00 /usr/bin/zeitgeist-daemon
+nicholas  5274  0.0  0.4 249900  9184 ?        Sl   13:32   0:01 /usr/lib/zeitgeist/zeitgeist-fts
+nicholas  5284  0.0  0.0  11396   612 ?        S    13:32   0:00 /bin/cat
+nicholas  5288  0.4  1.1 381596 23764 ?        Sl   13:32   0:13 yakuake
+nicholas  5290  0.0  0.1  52396  2480 ?        S    13:32   0:00 /usr/lib/gvfs/gvfsd
+nicholas  5293  0.0  0.1 285888  3652 ?        Sl   13:32   0:00 /usr/lib/gvfs//gvfs-fuse-daemon -f /home/nicholas/.gvfs
+nicholas  5303  0.0  0.1  57104  2700 ?        S    13:32   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+nicholas  5309  0.0  0.3 158256  6844 ?        Ss   13:32   0:00 kdeinit4: kdeinit4 Running...
+nicholas  5310  0.0  0.4 191688  9888 ?        S    13:32   0:00 kdeinit4: klauncher [kdeinit] --fd=8
+nicholas  5311  3.2  3.7 1472236 77120 ?       Ssl  13:32   1:40 /home/nicholas/.dropbox-dist/dropbox
+nicholas  5316  0.0  0.6 242604 12688 ?        S    13:32   0:00 kdeinit4: kded4 [kdeinit]  
+nicholas  5320  0.0  0.2  80652  4400 ?        S    13:32   0:00 /usr/lib/gvfs/gvfs-gdu-volume-monitor
+nicholas  5334  0.0  0.1  60344  2520 ?        S    13:32   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+nicholas  5340  0.0  0.1 142084  2520 ?        Sl   13:32   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+nicholas  5350  0.0  0.6 271864 13404 ?        S    13:32   0:00 /usr/bin/kglobalaccel
+nicholas  5371  0.0  0.2  27604  4700 pts/2    Ss   13:32   0:02 /bin/bash
+nicholas  5385  0.0  1.5 1044732 31612 ?       Sl   13:32   0:01 /usr/bin/knotify4
+nicholas  5471  0.0  0.1  47440  2540 ?        S    13:32   0:00 /usr/lib/xfce4/xfconf/xfconfd
+nicholas  5504  0.0  0.5 274164 11224 ?        Ssl  13:33   0:00 xfce4-power-manager
+nicholas  5513  6.3  4.4 665772 90584 ?        Sl   13:33   3:11 /opt/google/chrome/chrome       
+nicholas  5518  0.0  0.3 255100  6736 ?        S    13:33   0:01 /opt/google/chrome/chrome       
+nicholas  5519  0.0  0.0   6452   392 ?        S    13:33   0:00 /opt/google/chrome/chrome-sandbox /opt/google/chrome/chrome --type=zygote
+nicholas  5520  0.0  0.9 293840 20388 ?        S    13:33   0:00 /opt/google/chrome/chrome --type=zygote
+nicholas  5522  0.0  0.2 131932  4380 ?        S    13:33   0:00 /opt/google/chrome/nacl_helper_bootstrap /opt/google/chrome/nacl_helper --at-zero --r_debug=0x0000000000213000
+nicholas  5523  0.0  0.3 302036  6348 ?        S    13:33   0:00 /opt/google/chrome/chrome --type=zygote
+nicholas  5559  1.3  6.8 1020032 140408 ?      Sl   13:33   0:39 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/17/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V1/SpdyCwnd/cwnd16/SpdyImpact/spdy3/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/default/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_06/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --renderer-print-preview --disable-webgl --disable-pepper-3d-for-untrusted-use --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --channel=5513.1.2011173626
+nicholas  5583  0.2  1.2 953796 25996 ?        Sl   13:34   0:08 /opt/google/chrome/chrome --type=ppapi --channel=5513.4.1440002731 --lang=en-US
+nicholas  5814  0.2  2.2 896388 45480 ?        Sl   13:37   0:05 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/17/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V1/SpdyCwnd/cwnd16/SpdyImpact/spdy3/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/default/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_06/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --renderer-print-preview --disable-webgl --disable-pepper-3d-for-untrusted-use --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --channel=5513.6.2053643119
+nicholas  5862  0.0  0.1 261952  2668 ?        Sl   13:38   0:00 /usr/lib/dconf/dconf-service
+nicholas  5877  0.0  0.1  46108  2176 ?        S    13:40   0:00 /usr/lib/gvfs/gvfsd-metadata
+nicholas  5912  0.5  2.6 913376 53392 ?        Sl   13:44   0:12 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/17/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V1/SpdyCwnd/cwnd16/SpdyImpact/spdy3/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/default/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_06/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --renderer-print-preview --disable-webgl --disable-pepper-3d-for-untrusted-use --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --channel=5513.8.1445557288
+nicholas  5920  0.5  1.9 892236 39444 ?        Sl   13:44   0:12 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/17/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V1/SpdyCwnd/cwnd16/SpdyImpact/spdy3/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/default/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_06/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --renderer-print-preview --disable-webgl --disable-pepper-3d-for-untrusted-use --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --channel=5513.9.577833833
+nicholas  5937  0.0  0.1  69476  3912 ?        S    13:46   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exec_spaw/0
+nicholas  6112  3.4  1.5 551376 32600 pts/2    Sl   13:48   1:13 gedit DC97e_ConcatenateDir.py
+nicholas  6299  3.6  3.2 930152 66400 ?        Sl   13:54   1:06 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/17/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V1/SpdyCwnd/cwnd16/SpdyImpact/spdy3/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/default/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_06/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --renderer-print-preview --disable-webgl --disable-pepper-3d-for-untrusted-use --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --channel=5513.11.1661419286
+root      6354  0.0  0.0      0     0 ?        D    13:56   0:00 [kworker/u:1]
+root      6668  0.0  0.0      0     0 ?        S    14:06   0:00 [kworker/u:2]
+nicholas  6796  1.9  2.7 924868 56344 ?        Sl   14:10   0:16 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/OmniboxDisallowInlineHQP/Standard/OmniboxHQPNewScoring/Standard/OmniboxSearchSuggest/17/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SBInterstitial/V1/SpdyCwnd/cwnd16/SpdyImpact/spdy3/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Uniformity-Trial-1-Percent/group_25/UMA-Uniformity-Trial-10-Percent/default/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_06/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/warm_socket/ --renderer-print-preview --disable-webgl --disable-pepper-3d-for-untrusted-use --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --channel=5513.14.1295736636
+root      6896  0.0  0.0      0     0 ?        S    14:13   0:00 [kworker/0:2]
+root      7081  0.1  0.0      0     0 ?        S    14:16   0:00 [kworker/1:0]
+root      7320  0.0  0.0      0     0 ?        S    14:21   0:00 [kworker/u:0]
+nicholas  7402  0.0  0.0  22376  1292 pts/2    R+   14:24   0:00 ps -aux
+  PID TTY          TIME CMD
+ 6112 pts/2    00:01:13 gedit
+ 7405 pts/2    00:00:00 ps
