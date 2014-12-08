@@ -1,0 +1,4 @@
+C:\Users\nanderson\Desktop\reversing2 notes.txt
+C:\wamp\bin\apache\apache2.2.22\conf\httpd.conf
+C:\wamp\bin\php\php5.3.13\php.ini
+C:\wamp\bin\php\DO_NOT_DELETE_5.3.13.txt

@@ -1,0 +1,11 @@
+* (~medium)
+    many different NCs listening.  None of which really do anything besides
+    give you a rude message.  One listening NC message will direct you suggestively
+    to a port that that has a different type of signature... This port will
+    be listening for a password.  This is a python script that takes a username
+    and password combination, and given the correct credentials it will send you a file
+    that file contains the flag.
+    
+* (easy)
+    web server listening on non-80 port.  Inside of the index.html page...
+    there will be commented out a base64 encoded tar file.

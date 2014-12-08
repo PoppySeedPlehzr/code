@@ -1,0 +1,26 @@
+1.)  Compiled python binary, that prints out the solutions ASCII index values.
+To print out solution in clear text run the following
+python -c "f = open('outfile','r').readlines()[0]; l = [x.rstrip(',]').lstrip('[') for x in f.split()]; print(''.join([chr(int(c)) for c in l]))"
+
+2.)  Base64 encoding of step 1
+
+3.)  tar of step 2
+
+4.)  tar of step 3
+
+5.)  tar of step 4
+
+6.)  password protected tar of step 5
+
+7.)  Base64 encode step 6 and literally place in image (superimpose)
+
+8.)  Add to comment of picture indicating to use the md5 sum of the image
+    to get the password for the tar file.
+    
+9.)  Base64 encode of the image
+
+10.)  Place result of step 9 in comments of website listening on port 80.
+
+
+
+
