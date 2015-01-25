@@ -4,9 +4,9 @@ import argparse
 from cryptography.fernet import Fernet
 
 def decrypt(fname, key):
-    data = open(os.path.join(os.getcwd(), fname), 'rb').read()
+    data = open(fname, 'rb').read()
     fout_name = '.'.join(fname.split(".")[:-1]) if len(fname.split(".")) > 1 else fname
-    fout = open(os.path.join(os.getcwd(), fout_name+".clear"), 'wb')
+    fout = open(fout_name+".clear", 'wb')
     fdec = Fernet(key)
     print "[+] Decrypting {} to {}.clear . . .".format(fname,fout_name)
     fout.write(fdec.decrypt(data))
@@ -23,12 +23,12 @@ if __name__ == "__main__":
     parser.add_argument("-k","--key", type=str, help="Decryption Key, must be a Fernet Key from the python cryptography module")
     args = parser.parse_args()
 
-    if not os.path.exists(os.path.join(os.getcwd(), args.encryptedfile)):
+    if not os.path.exists(args.encryptedfile):
         print "[-] Encrypted file not found in current working directory."
         sys.exit()
-    elif not os.path.exists(os.path.join(os.getcwd(), args.key)):
+    elif not os.path.exists(args.key):
         print "[-] Decryption key file not found in current working directory."
         sys.exit()
     else:
-        key = open(os.path.join(os.getcwd(), args.key), "rb").read()
+        key = open(args.key, "rb").read()
     decrypt(args.encryptedfile, key)
