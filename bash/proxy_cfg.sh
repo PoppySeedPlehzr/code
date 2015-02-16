@@ -5,7 +5,8 @@
 # my laptop from work into my home connection -.-
 
 iface=$(route get 0.0.0.0 | awk '/interface: / {print $2}')
-proxy='134.253'
+proxy='XXX.XXX'
+
 if [ $iface == 'en0' ]
 then
     # echo Network active
@@ -14,16 +15,9 @@ then
     sub=$(echo $ip | grep -E -o '^[0-9]{1,3}\.[0-9]{1,3}')
     if [ $sub == $proxy ]
     then
-        # Perform Sandia Proxy information here
-        export http_proxy="http://wwwproxy.sandia.gov:80"
-        export https_proxy="http://wwwproxy.sandia.gov:80"
-        export ftp_proxy="http://wwwproxy.sandia.gov:80"
-        export HTTP_PROXY="http://wwwproxy.sandia.gov:80"
-        export HTTPS_PROXY="http://wwwproxy.sandia.gov:80"
-        export FTP_PROXY="http://wwwproxy.sandia.gov:80"
+        # Perform proxy config for net here
     else
     else
-        # Setup DNS and... other shit here
-
+        # Otherwise, no configs, add DNS if wanted.
     fi
 fi
