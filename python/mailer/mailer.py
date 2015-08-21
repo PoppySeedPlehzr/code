@@ -15,13 +15,12 @@ sig_joke = """\n\n
 
 """
 
-#SERVERS = open("smtp_servers.txt", 'r').readlines()
-#SERVER = "mail.sandia.gov"
-#SERVER = "mailgate.sandia.gov"
-SERVER = "mail-relay.3ireland.ie"
+SERVER = open("smtp_servers.txt", 'r').readlines()[0].strip()
 
 def mailer(f, t, s, b):
     smtp = smtplib.SMTP(SERVER)
+    if os.path.exists(b):
+        b = open(b, 'r').read()
     text = b+sig
     msg = MIMEText(text)
     msg['Subject'] = s
@@ -35,7 +34,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="A anonymous smtp mailer client")
     parser.add_argument("sender", help="Email to send from")
     parser.add_argument("--to", "-t", help="Email to send to")
-    parser.add_argument("--subject" "-j", help="Message Subject")
-    parser.add_argument("--body", "-b", help="Message body")
+    parser.add_argument("--subject" "-s", help="Message Subject")
+    parser.add_argument("--body", "-b", help="File with message body")
     args = parser.parse_args()
     mailer(args.to, args.sender, args.subject, args.body)
