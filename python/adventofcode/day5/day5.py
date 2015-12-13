@@ -1,31 +1,42 @@
 #!/usr/bin/env python
 from sets import Set
+from string import count
 
-#lines = open("day5.in", 'r').readlines()
-lines = open("day5.in.sample", 'r').readlines()
+lines = [x.strip() for x in open("day5.in", 'r').readlines()]
+#lines = [x.strip() for x in open("day5.in.sample", 'r').readlines()]
 
+
+
+# Part 2
+cnt = 0
+for l in lines:
+    if not [l[i] for i in range(len(l) - 2) if l[i] == l[i+2]]:
+        continue
+    # Fucking lol. The second stipulation.. is literally just python's string.count
+    if not [ count(l, l[i:i+2]) for i in range(len(l)- 2) if count(l, l[i:i+2]) >= 2 ]:
+        continue
+    cnt += 1
+print "[+] {} nice strings".format(cnt)
+
+
+"""  Part 1
 # Should contain at least three vowels
-vowels = Set(['a','e','i','o','u'])
+vowels = ['a','e','i','o','u']
 # Does not contain any of the following strings, EVEN if they satisfy other reqs
-does_not = Set(['ab', 'cd', 'pq', 'xy'])
-
+does_not = ['ab', 'cd', 'pq', 'xy']
 
 cnt = 0
 for l in lines:
     if [x for x in does_not if x in l]:
-        print "[-] Line {} was naughty because of not allowed strings".format(l)
         continue # Not nice, contains one of the strings
-    if len(vowels.intersection(Set(l))) < 3:
-        print "[-] Line {} was naughty because not greater than or equal to 3 vowels".format(l)
+    if len([x for x in l if x in vowels]) < 3:
         continue # Not nice, does not contain more than three vowels.
-    chars = list(l)
-    if not [chars[i] for i in range(len(chars)-1) if chars[i+1] == chars[i]]:
-        print "[-] Line {} was naughty because no repeated strings".format(l)
+    if not [l[i] for i in range(len(l)-1) if l[i+1] == l[i]]:
         continue
     cnt += 1
 
 print "[+] {} nice strings".format(cnt)
-
+"""
 
 
 """
@@ -47,6 +58,24 @@ haegwjzuvuyypxyu is naughty because it contains the string xy.
 dvszwmarrgswjxmb is naughty because it contains only one vowel.
 How many strings are nice?
 
+Your puzzle answer was 258.
 
+The first half of this puzzle is complete! It provides one gold star: *
+
+--- Part Two ---
+
+Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or nice. None of the old rules apply, as they are all clearly ridiculous.
+
+Now, a nice string is one with all of the following properties:
+
+It contains a pair of any two letters that appears at least twice in the string without overlapping, like xyxy (xy) or aabcdefgaa (aa), but not like aaa (aa, but it overlaps).
+It contains at least one letter which repeats with exactly one letter between them, like xyx, abcdefeghi (efe), or even aaa.
+For example:
+
+qjhvhtzxzqqjkmpb is nice because is has a pair that appears twice (qj) and a letter that repeats with exactly one letter between them (zxz).
+xxyxx is nice because it has a pair that appears twice and a letter that repeats with one between, even though the letters used by each rule overlap.
+uurcxstgmygtbstg is naughty because it has a pair (tg) but no repeat with a single letter between them.
+ieodomkazucvgmuy is naughty because it has a repeating letter with one between (odo), but no pair that appears twice.
+How many strings are nice under these new rules?
 
 """
