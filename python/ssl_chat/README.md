@@ -1,6 +1,9 @@
 ## SSL Chat
 
 
+* Not currently working :P  This was definitely a fun exercise in learning about Blocking and Non-Blocking sockets with
+SSL though :P
+
 ### About
 * Nothing too fancy, just a python SSL chat client/server program. I wrote this because I frequently needed a
 template for how to do python raw SSL sockets.
