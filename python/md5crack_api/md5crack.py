@@ -3,8 +3,8 @@ import requests
 import argparse
 
 url = "http://api.md5crack.com"
-# MD5Crack API Key: z9RDZymlTdeVq63u
-key = "z9RDZymlTdeVq63u"
+# MD5Crack API Key: 
+key = ""
 
 def lookup(h):
 	resp = requests.get(url+"/crack/"+key+"/"+h)
